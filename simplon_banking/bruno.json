@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "simplon_banking",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

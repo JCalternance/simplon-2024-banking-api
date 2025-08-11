@@ -17,7 +17,7 @@ public class TransactionDTO {
     
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate date;
-    @JsonFormat(pattern = "hh:mm")
+    @JsonFormat(pattern = "HH:mm")
     private LocalTime time = LocalTime.MIN;
     
     private Long categoryId;

@@ -42,7 +42,7 @@ public class SecurityConfig {
                 CorsConfiguration configuration = new CorsConfiguration();
                 configuration.setAllowedOrigins(Arrays.asList("*"));
                 configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
-                configuration.setAllowedHeaders(Arrays.asList("authorization", "content-type", "x-auth-token"));
+                configuration.setAllowedHeaders(Arrays.asList("*"));
                 return configuration;
             }))
             .csrf(csrf -> csrf.disable())

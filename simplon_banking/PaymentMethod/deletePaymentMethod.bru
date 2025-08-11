@@ -1,0 +1,23 @@
+meta {
+  name: deletePaymentMethod
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{host}}/payment-methods/{{id}}
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "essai",
+    "color": "essai",
+    "limit": null
+  }
+}
+
+vars:pre-request {
+  id: 1
+}

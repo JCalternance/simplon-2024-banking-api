@@ -1,0 +1,11 @@
+meta {
+  name: listStatsMonthly
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/transactions/statistics/monthly
+  body: none
+  auth: inherit
+}

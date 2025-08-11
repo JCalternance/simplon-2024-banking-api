@@ -1,0 +1,23 @@
+meta {
+  name: createTransaction
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/transactions
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "essai",
+    "description": "essai",
+    "amount": 123,
+    "date": "2025-07-30",
+    "time": "10:30",
+    "categoryId": 1,
+    "paymentMethodId": 1
+  }
+}

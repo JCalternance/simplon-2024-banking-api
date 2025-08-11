@@ -1,0 +1,18 @@
+meta {
+  name: createPaymentMethod
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/payment-methods
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "CB perso",
+    "lastDigits": "4321"
+  }
+}

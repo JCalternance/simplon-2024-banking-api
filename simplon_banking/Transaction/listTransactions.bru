@@ -1,0 +1,11 @@
+meta {
+  name: listTransactions
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/transactions
+  body: none
+  auth: inherit
+}

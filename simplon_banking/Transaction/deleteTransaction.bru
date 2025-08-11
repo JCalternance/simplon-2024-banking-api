@@ -1,0 +1,23 @@
+meta {
+  name: deleteTransaction
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{host}}/transactions/{{id}}
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "essai",
+    "color": "essai",
+    "limit": null
+  }
+}
+
+vars:pre-request {
+  id: 1
+}

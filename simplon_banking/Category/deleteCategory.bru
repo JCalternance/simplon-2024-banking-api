@@ -1,0 +1,23 @@
+meta {
+  name: deleteCategory
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{host}}/categories/{{id}}
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "essai",
+    "color": "essai",
+    "limit": null
+  }
+}
+
+vars:pre-request {
+  id: 6
+}
