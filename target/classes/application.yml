@@ -14,8 +14,8 @@ spring:
 
   datasource:
     url: jdbc:postgresql://localhost:5432/banking
-    username:  banking
-    password:  banking
+    username:  postgres
+    password:  postgres
   jpa:
     database: postgresql
     hibernate:
